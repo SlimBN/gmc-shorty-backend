@@ -89,3 +89,19 @@ export const getExploreShorties = async (req, res, next) => {
     handleError(500, err);
   }
 };
+
+// SEARCH SHORTIES
+export const searchShorties = async (req, res, next) => {
+  try {
+    const query = req.params.query;
+
+    // Find shorties that contain the query in their message field
+    const matchingShorties = await Shorty.find({
+      message: { $regex: query, $options: "i" }, // Case-insensitive search
+    });
+
+    res.status(200).json(matchingShorties);
+  } catch (err) {
+    handleError(500, err);
+  }
+};

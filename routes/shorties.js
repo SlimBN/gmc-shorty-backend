@@ -7,6 +7,7 @@ import {
   getAllShorties,
   getUserShorties,
   getExploreShorties,
+  searchShorties,
 } from "../controllers/shorty.js";
 
 // Create a router instance
@@ -29,6 +30,9 @@ router.get("/user/all/:id", getUserShorties);
 
 // Explore shorties
 router.get("/explore", getExploreShorties);
+
+// Search for shorties containing specific words
+router.get("/search/:query", verifyToken, searchShorties);
 
 // Export the router
 export default router;
