@@ -1,5 +1,5 @@
 // Import required modules
-import * as Sentry from "@sentry/node";
+import * as Sentry from "npm:@sentry/node@^7.64.0";
 import express from "npm:express@^4.18.2";
 import cors from 'npm:cors@^2.8.5';
 import dotenv from "npm:dotenv@^16.3.1";
