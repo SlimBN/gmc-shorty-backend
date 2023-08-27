@@ -1,7 +1,7 @@
 // Import required modules
 import * as Sentry from "@sentry/node";
-import express from "express";
-import cors from 'np:cors@^2.8.5';
+import express from "npm:express@^4.18.2";
+import cors from 'npm:cors@^2.8.5';
 import dotenv from "npm:dotenv@^16.3.1";
 import mongoose from "npm:mongoose@^7.4.5";
 // import cookieParser from "cookie-parser";
