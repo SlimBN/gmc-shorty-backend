@@ -4,7 +4,7 @@ import express from "express";
 import cors from 'cors';
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-import cookieParser from "cookie-parser";
+// import cookieParser from "cookie-parser";
 
 // Import route modules
 import userRoutes from "./routes/users.js";
@@ -35,7 +35,7 @@ const connect = () => {
 };
 
 // Use cookie parser middleware to handle cookies in requests
-app.use(cookieParser());
+// app.use(cookieParser());
 
 // Use JSON parsing middleware to handle JSON data in requests
 app.use(express.json());
@@ -75,7 +75,7 @@ app.use(Sentry.Handlers.errorHandler());
 app.get("/", function rootHandler(req, res) {
     res.end("Hello world!");
   });
-  
+
 // Optional fallthrough error handler
 app.use(function onError(err, req, res, next) {
   // The error id is attached to `res.sentry` to be returned
