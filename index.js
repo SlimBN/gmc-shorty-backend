@@ -3,7 +3,7 @@ import * as Sentry from "@sentry/node";
 import express from "express";
 import cors from 'cors';
 import dotenv from "dotenv";
-import mongoose from "mongoose";
+import mongoose from "npm:mongoose@^7.4.5";
 // import cookieParser from "cookie-parser";
 
 // Import route modules
