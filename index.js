@@ -85,7 +85,7 @@ app.use(function onError(err, req, res, next) {
 });
 
 // Start the server and listen on port 8000
-app.listen(8000, () => {
+app.listen(process.env.PORT || 8000, () => {
   connect(); // Connect to the MongoDB database
   console.log("Listening on port 8000");
 });
