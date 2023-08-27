@@ -2,7 +2,7 @@
 import * as Sentry from "@sentry/node";
 import express from "express";
 import cors from 'cors';
-import dotenv from "dotenv";
+import dotenv from "npm:dotenv@^16.3.1";
 import mongoose from "npm:mongoose@^7.4.5";
 // import cookieParser from "cookie-parser";
 
