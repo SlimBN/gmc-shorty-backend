@@ -88,4 +88,4 @@ app.listen(8000, () => {
 
 
 // Export the Express API
-module.exports = app;
+export app;
