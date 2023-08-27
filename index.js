@@ -71,6 +71,11 @@ app.use("/api/shorties", shortyRoutes); // Mount the shortyRoutes at /api/shorti
 // The error handler must be registered before any other error middleware and after all controllers
 app.use(Sentry.Handlers.errorHandler());
 
+// All controllers should live here
+app.get("/", function rootHandler(req, res) {
+    res.end("Hello world!");
+  });
+  
 // Optional fallthrough error handler
 app.use(function onError(err, req, res, next) {
   // The error id is attached to `res.sentry` to be returned
