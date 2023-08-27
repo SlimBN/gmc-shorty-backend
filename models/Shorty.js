@@ -1,4 +1,4 @@
-import mongoose from "npm:mongoose@^7.4.5";
+import mongoose from "mongoose";
 
 // Define the schema for the Shorty model
 const ShortySchema = new mongoose.Schema(

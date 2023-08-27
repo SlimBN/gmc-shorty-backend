@@ -1,4 +1,4 @@
-import mongoose from "npm:mongoose@^7.4.5";
+import mongoose from "mongoose";
 
 // Define the schema for the User model
 const UserSchema = new mongoose.Schema(
