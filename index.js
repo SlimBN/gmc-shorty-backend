@@ -84,3 +84,8 @@ app.listen(8000, () => {
   connect(); // Connect to the MongoDB database
   console.log("Listening on port 8000");
 });
+
+
+
+// Export the Express API
+module.exports = app;
