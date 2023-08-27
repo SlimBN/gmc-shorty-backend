@@ -9,4 +9,5 @@ export const handleError = (status, message) => {
     
     // Return the error object
     return error;
+    
 };
